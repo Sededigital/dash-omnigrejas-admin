@@ -310,142 +310,104 @@
     </div>
 
     <section class="section dashboard">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="row">
-                
-                <!-- Liderança Card -->
-                <div class="col-xxl-4 col-md-4">
-                    <div class="card info-card sales-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Liderança</h5>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-person-badge"></i>
-                                </div>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLideranca">
-                                    <i class="bi bi-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Programação Card -->
-                <div class="col-xxl-4 col-md-4">
-                    <div class="card info-card revenue-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Programação</h5>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-calendar-event"></i>
-                                </div>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProgramacao">
-                                    <i class="bi bi-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- História Card -->
-                <div class="col-xxl-4 col-md-4">
-                    <div class="card info-card customers-card">
-                        <div class="card-body">
-                            <h5 class="card-title">História</h5>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-book"></i>
-                                </div>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHistoria">
-                                    <i class="bi bi-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!---fé--->
-                <div class="col-xxl-4 col-md-4">
-                    <div class="card info-card revenue-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Confissão de fê</h5>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-lightbulb"></i>                                 </div>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProgramacao">
-                                    <i class="bi bi-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!---missão-->
-                <div class="col-xxl-4 col-md-4">
-                    <div class="card info-card customers-card">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                               Missão, Visão, Valores
-                            </h5>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-flag"></i>       
-                                </div>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHistoria">
-                                    <i class="bi bi-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             <!--governo-->
-                <div class="col-xxl-4 col-md-4">
-                    <div class="card info-card customers-card">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                Governo
-                            </h5>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-bank"></i>      
-                                </div>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHistoria">
-                                    <i class="bi bi-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- selecção... -->
-                <div class="col-12">
-                    <label for="seletorCards" class="form-label">Seleciona uma opção</label>
-                    <select class="form-select" id="seletorCards" onchange="atualizarTexto()">
-                        <option selected disabled>Seleciona...</option>
-                        <option value="História">História</option>
-                        <option value="Confissão de Fé">Confissão de Fé</option>
-                        <option value="Missão, Visão e Valores">Missão, Visão e Valores</option>
-                        <option value="Governo">Governo</option>
-                        <option value="Liderança">Liderança</option>
-                        <option value="Programação">Programação</option>
-                    </select>
-                </div>
-                
-                <p id="textoSelecionado" class="mt-2">Você selecionou: Nenhuma opção</p>
-                
-                <script>
-                    function atualizarTexto() {
-                        let select = document.getElementById("seletorCards");
-                        let texto = select.value;
-                        document.getElementById("textoSelecionado").innerText = "Você selecionou: " +  texto;
-                    }
-                </script>
-                
-                
-                
-            </div>
-        </div>
-    </div>
-</section>
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="row">
+                  
+                  <!-- Culto Card -->
+                  <div class="col-xxl-4 col-md-4">
+                      <div class="card info-card sales-card">
+                          <div class="card-body">
+                              <h5 class="card-title">Culto</h5>
+                              <div class="d-flex align-items-center justify-content-between">
+                                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                      <i class="bi bi-fire"></i>
+                                  </div>
+                                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCulto">
+                                      <i class="bi bi-plus"></i>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Reunião Card -->
+                  <div class="col-xxl-4 col-md-4">
+                      <div class="card info-card revenue-card">
+                          <div class="card-body">
+                              <h5 class="card-title">Reunião</h5>
+                              <div class="d-flex align-items-center justify-content-between">
+                                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                      <i class="bi bi-people"></i>
+                                  </div>
+                                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalReuniao">
+                                      <i class="bi bi-plus"></i>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Eventos Card -->
+                  <div class="col-xxl-4 col-md-4">
+                      <div class="card info-card customers-card">
+                          <div class="card-body">
+                              <h5 class="card-title">Eventos</h5>
+                              <div class="d-flex align-items-center justify-content-between">
+                                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                      <i class="bi bi-calendar-event"></i>
+                                  </div>
+                                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEventos">
+                                      <i class="bi bi-plus"></i>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Consulta Pastoral Card -->
+                  <div class="col-xxl-4 col-md-4">
+                      <div class="card info-card revenue-card">
+                          <div class="card-body">
+                              <h5 class="card-title">Consulta Pastoral</h5>
+                              <div class="d-flex align-items-center justify-content-between">
+                                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                      <i class="bi bi-chat-square-text"></i>
+                                  </div>
+                                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalConsultaPastoral">
+                                      <i class="bi bi-plus"></i>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Seleção de Opção -->
+                  <div class="col-12">
+                      <label for="seletorCards" class="form-label">Seleciona uma opção</label>
+                      <select class="form-select" id="seletorCards" onchange="atualizarTexto()">
+                          <option selected disabled>Seleciona...</option>
+                          <option value="Culto">Culto</option>
+                          <option value="Reunião">Reunião</option>
+                          <option value="Eventos">Eventos</option>
+                          <option value="Consulta Pastoral">Consulta Pastoral</option>
+                      </select>
+                  </div>
+                  
+                  <p id="textoSelecionado" class="mt-2">Você selecionou: Nenhuma opção</p>
+                  
+                  <script>
+                      function atualizarTexto() {
+                          let select = document.getElementById("seletorCards");
+                          let texto = select.value;
+                          document.getElementById("textoSelecionado").innerText = "Você selecionou: " + texto;
+                      }
+                  </script>
+              </div>
+          </div>
+      </div>
+  </section>
+  
 
 
 

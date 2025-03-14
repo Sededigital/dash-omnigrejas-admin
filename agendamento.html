@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Omnigrejas admin |Agendamentos</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo-omni.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo-omni.png"  alt="">
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+    
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle" href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- Ícone de Pesquisa -->
+    
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- Ícone de Notificações -->
+    
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              Você tem 4 novas notificações
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Ver todas</span></a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+    
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Oração Coletiva</h4>
+                <p>Participe do nosso momento de intercessão</p>
+                <p>30 min atrás</p>
+              </div>
+            </li>
+    
+            <li><hr class="dropdown-divider"></li>
+    
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Pedido de Oração</h4>
+                <p>Um irmão precisa da sua intercessão</p>
+                <p>1 hora atrás</p>
+              </div>
+            </li>
+    
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-footer">
+              <a href="#">Mostrar todas as notificações</a>
+            </li>
+          </ul>
+        </li><!-- Fim Notificações -->
+    
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- Ícone de Mensagens -->
+    
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              Você tem 3 novas mensagens
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Ver todas</span></a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+    
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Pastor João</h4>
+                  <p>"A graça do Senhor seja contigo!"</p>
+                  <p>4 horas atrás</p>
+                </div>
+              </a>
+            </li>
+    
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-footer">
+              <a href="#">Ver todas as mensagens</a>
+            </li>
+          </ul>
+        </li><!-- Fim Mensagens -->
+    
+        <li class="nav-item dropdown pe-3">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Perfil" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Adão Magalhães</span>
+          </a><!-- Ícone de Perfil -->
+    
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Adão Magalhães</h6>
+              <span>Administrador</span>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+    
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>Meu Perfil</span>
+              </a>
+            </li>
+    
+            <li><hr class="dropdown-divider"></li>
+    
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Ajuda</span>
+              </a>
+            </li>
+    
+            <li><hr class="dropdown-divider"></li>
+    
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-login.html">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sair com a Paz do Senhor</span>
+              </a>
+            </li>
+          </ul>
+        </li><!-- Fim Perfil -->
+    
+      </ul>
+    </nav>
+    
+   <!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <style>
+    /* Ajuste para os links do sidebar */
+    .sidebar-nav .nav-link {
+      color: #454242; 
+      background: none !important;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+    }
+  
+    .sidebar-nav .nav-link:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  
+    .sidebar-nav .nav-content {
+      padding-left: 20px;
+    }
+  
+    .sidebar-nav .nav-content li {
+      border-bottom: none;
+      padding: 5px 0;
+    }
+   
+    .sidebar-nav .nav-content.show {
+      background: none;
+    }
+  </style>
+  
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+  
+      <!-- Igrejas -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#igrejas-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bank"></i><span>Igrejas</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="igrejas-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li><a href="#"><i class="bi bi-circle"></i><span>Igrejas</span></a></li>
+          <li><a href="#"><i class="bi bi-circle"></i><span>Menu de Preço</span></a></li>
+          <li><a href="#"><i class="bi bi-circle"></i><span>Departamentos</span></a></li>
+          <li><a href="#"><i class="bi bi-circle"></i><span>Institucional</span></a></li>
+        </ul>
+      </li>
+  
+      <!-- Gestão de Membros -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-people"></i><span>Gestão de Membros</span>
+        </a>
+      </li>
+  
+      <!-- Categorias -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-tags"></i><span>Categorias</span>
+        </a>
+      </li>
+  
+      <!-- Aliança -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-handshake"></i><span>Aliança</span>
+        </a>
+      </li>
+  
+      <!-- Gestão de Usuário -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-person-badge"></i><span>Gestão de Usuário</span>
+        </a>
+      </li>
+  
+      <!-- Gestão de Valores -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-cash-stack"></i><span>Gestão de Valores</span>
+        </a>
+      </li>
+  
+      <!-- Obreiros -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-people-fill"></i><span>Obreiros</span>
+        </a>
+      </li>
+  
+      <!-- Operações -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#operacoes-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-tools"></i><span>Operações</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="operacoes-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li><a href="#"><i class="bi bi-circle"></i><span>Serviços / Produtos</span></a></li>
+          <li><a href="#"><i class="bi bi-circle"></i><span>Ativar / Publicações</span></a></li>
+        </ul>
+      </li>
+  
+      <!-- Publicações -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#public-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-megaphone"></i><span>Publicações</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="public-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li><a href="#"><i class="bi bi-circle"></i><span>Eventos / Igrejas</span></a></li>
+          <li><a href="#"><i class="bi bi-circle"></i><span>Eventos / Normal</span></a></li>
+        </ul>
+      </li>
+  
+      <!-- Configurações -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-gear"></i><span>Configurações</span>
+        </a>
+      </li>
+  
+      <!-- Solicitações / Compra -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-cart"></i><span>Solicitações / Compra</span>
+        </a>
+      </li>
+  
+    </ul>
+  </aside>
+  <!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+        <h1>Agendamentos</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Agendamentos</a></li>
+                <li class="breadcrumb-item active">Painel de Controle</li>
+            </ol>
+        </nav>
+    </div>
+
+    <section class="section dashboard">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                
+                <!-- Liderança Card -->
+                <div class="col-xxl-4 col-md-4">
+                    <div class="card info-card sales-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Liderança</h5>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-person-badge"></i>
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLideranca">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Programação Card -->
+                <div class="col-xxl-4 col-md-4">
+                    <div class="card info-card revenue-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Programação</h5>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-calendar-event"></i>
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProgramacao">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- História Card -->
+                <div class="col-xxl-4 col-md-4">
+                    <div class="card info-card customers-card">
+                        <div class="card-body">
+                            <h5 class="card-title">História</h5>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-book"></i>
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHistoria">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---fé--->
+                <div class="col-xxl-4 col-md-4">
+                    <div class="card info-card revenue-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Confissão de fê</h5>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-lightbulb"></i>                                 </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProgramacao">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---missão-->
+                <div class="col-xxl-4 col-md-4">
+                    <div class="card info-card customers-card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                               Missão, Visão, Valores
+                            </h5>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-flag"></i>       
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHistoria">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             <!--governo-->
+                <div class="col-xxl-4 col-md-4">
+                    <div class="card info-card customers-card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Governo
+                            </h5>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-bank"></i>      
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHistoria">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- selecção... -->
+                <div class="col-12">
+                    <label for="seletorCards" class="form-label">Seleciona uma opção</label>
+                    <select class="form-select" id="seletorCards" onchange="atualizarTexto()">
+                        <option selected disabled>Seleciona...</option>
+                        <option value="História">História</option>
+                        <option value="Confissão de Fé">Confissão de Fé</option>
+                        <option value="Missão, Visão e Valores">Missão, Visão e Valores</option>
+                        <option value="Governo">Governo</option>
+                        <option value="Liderança">Liderança</option>
+                        <option value="Programação">Programação</option>
+                    </select>
+                </div>
+                
+                <p id="textoSelecionado" class="mt-2">Você selecionou: Nenhuma opção</p>
+                
+                <script>
+                    function atualizarTexto() {
+                        let select = document.getElementById("seletorCards");
+                        let texto = select.value;
+                        document.getElementById("textoSelecionado").innerText = "Você selecionou: " +  texto;
+                    }
+                </script>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+  
+  <!-- Adicione FontAwesome para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  
+
+    
+    
+
+</main>
+
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Direitos Autorais <strong><span>Omnigrejas </span></strong>. Todos os direitos reservados
+    </div>
+    <div class="credits">
+      Desenvolvido por <a href="https://sededigital.ao/">Sededigital</a>
+ 
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

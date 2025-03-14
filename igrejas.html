@@ -412,7 +412,7 @@
             <h5 class="card-title">Lista de Igrejas</h5>
   
             <div class="d-flex justify-content-end ">
-              <button class="btn btn-primary" title="Adicionar Igreja">
+              <button class="btn btn-primary" title="Adicionar Igreja" data-bs-toggle="modal" data-bs-target="#modalAdicionarIgreja">
                 <i class="fas fa-plus"></i>
               </button>
             </div>
@@ -485,6 +485,115 @@
       </div>
     </div>
   </section>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalAdicionarIgreja" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">Adicionar Igreja</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="formIgreja">
+          <div class="row">
+            <div class="col-md-4">
+              <label class="form-label">Nome da Igreja</label>
+              <input type="text" class="form-control" name="nome_igreja" required>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">NIF da Igreja</label>
+              <input type="text" class="form-control" name="nif_igreja" required>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Diário da República</label>
+              <input type="file" class="form-control" name="diario_republica">
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <label class="form-label">Sigla</label>
+              <input type="text" class="form-control" name="sigla">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Telefone</label>
+              <input type="text" class="form-control" name="telefone">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Localização</label>
+              <input type="text" class="form-control" name="localizacao">
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <label class="form-label">Tempo de Ativação</label>
+              <select class="form-select" name="tempo_ativacao">
+                <option value="">Selecione...</option>
+                <option value="menos_1_ano"> 1 ano</option>
+                <option value="1_5_anos">1 a 5 anos</option>
+                <option value="mais_5_anos">Mais de 5 anos</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Categoria</label>
+              <select class="form-select" name="categoria">
+                <option value="">Selecione...</option>
+                <option value="evangelica">Evangélica</option>
+                <option value="catolica">Católica</option>
+                <option value="outra">Outra</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Alianças</label>
+              <select class="form-select" name="aliancas">
+                <option value="">Selecione...</option>
+                <option value="nenhuma">Nenhuma</option>
+                <option value="nacional">Nacional</option>
+                <option value="internacional">Internacional</option>
+              </select>
+            </div>
+          </div>
+          
+
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <label class="form-label">Logotipo</label>
+              <input type="file" class="form-control" name="logotipo">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Foto de Capa</label>
+              <input type="file" class="form-control" name="foto_capa">
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <label class="form-label">Sobre</label>
+              <textarea class="form-control" name="sobre" rows="3"></textarea>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Descrição</label>
+              <textarea class="form-control" name="descricao" rows="3"></textarea>
+            </div>
+          </div>
+
+          <div class="modal-footer mt-4">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   
   <!-- Adicione FontAwesome para os ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">

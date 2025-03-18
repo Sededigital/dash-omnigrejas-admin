@@ -9,7 +9,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-<
+ 
   <link href="assets/img/logo-omni.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -86,8 +86,10 @@
                       <button class="btn btn-primary w-100" type="submit">Iniciar sessão</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">Ainda não tem uma conta? <a href="pages-register.html">Criar conta </a></p>
+                      <p class="small mb-0">Ainda não tem uma conta? <a href="criar-conta.php">Criar conta </a></p>
                     </div>
+
+                    <a href="../Admin_Omnigrejas/views/pages/main.php">entrar</a>
                   </form>
 
                 </div>

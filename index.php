@@ -45,7 +45,7 @@
             <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
               <div class="d-flex justify-content-center ">
-                <a href="index.html" class="logo d-flex align-items-center w-auto">
+                <a href="../Admin_Omnigrejas/views/pages/main.php" class="logo d-flex align-items-center w-auto">
                   <img src="../Admin_Omnigrejas/views/assets/img/logo-omni.png"  width="100"  alt="">
                 </a>
               </div><!-- End Logo -->
@@ -89,7 +89,7 @@
                       <p class="small mb-0">Ainda não tem uma conta? <a href="criar-conta.php">Criar conta </a></p>
                     </div>
 
-                    <a href="../Admin_Omnigrejas/views/pages/main.php">entrar</a>
+
                   </form>
 
                 </div>

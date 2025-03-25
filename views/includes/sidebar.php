@@ -57,12 +57,20 @@
         </a>
       </li>
   
+
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/agendamento.html">
+          <i class="bi bi-handshake"></i><span>Agendamentos</span>
+        </a>
+      </li>
       <!-- Aliança -->
       <li class="nav-item">
         <a class="nav-link" href="aliancas.html">
           <i class="bi bi-handshake"></i><span>Aliança</span>
         </a>
       </li>
+
+      
   
       <!-- Gestão de Usuário -->
       <li class="nav-item">

@@ -1,5 +1,30 @@
-<?php 
-include '../../routers/route.php'; 
+<?php
+extract($_REQUEST);
+$pagina_atual = "home.php"; 
+
+if (isset($pagina)) {
+    switch ($pagina) {
+        case 'home':
+            $pagina_atual = "home.php"; 
+            break;
+        case 'igrejas':
+            $pagina_atual = "igrejas.php"; 
+            break;
+        case 'planos':
+            $pagina_atual = "planos.php"; 
+            break;
+        case 'departamentos':
+            $pagina_atual = "departamentos.php"; 
+            break;
+          case 'categoria':
+            $pagina_atual = "categoria.php"; 
+            break;
+         case 'usuarios':
+            $pagina_atual = "meus_usuarios.php"; 
+            break;    
+        
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -41,9 +66,7 @@ include '../../routers/route.php';
         <div class="row">
             <div class="col-lg-12">
 
-                <!-- Conteúdo Dinâmico -->
-                <?php include($start_page); ?>
-                <!-- Fim do Conteúdo Dinâmico -->
+              <?php include $pagina_atual; ?>
 
             </div>
         </div>

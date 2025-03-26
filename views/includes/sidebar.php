@@ -36,7 +36,7 @@
           <i class="bi bi-bank"></i><span>Igrejas</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="igrejas-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
-          <li><a href="igrejas.html"><i class="bi bi-circle"></i><span>Igrejas</span></a></li>
+          <li><a href="?pagina=igrejas"><i class="bi bi-circle"></i><span>Igrejas</span></a></li>
           <li><a href="planos.html"><i class="bi bi-circle"></i><span>Menu de Preço</span></a></li>
           <li><a href="departamento.html"><i class="bi bi-circle"></i><span>Departamentos</span></a></li>
           <li><a href="institucional.html"><i class="bi bi-circle"></i><span>Institucional</span></a></li>
@@ -52,7 +52,7 @@
   
       <!-- Categorias -->
       <li class="nav-item">
-        <a class="nav-link" href="Categoria.html">
+        <a class="nav-link" href="?pagina=categoria">
           <i class="bi bi-tags"></i><span>Categorias</span>
         </a>
       </li>
@@ -74,7 +74,7 @@
   
       <!-- Gestão de Usuário -->
       <li class="nav-item">
-        <a class="nav-link" href="meus_usuarios.html">
+        <a class="nav-link" href="?pagina=usuarios">
           <i class="bi bi-person-badge"></i><span>Gestão de Usuário</span>
         </a>
       </li>

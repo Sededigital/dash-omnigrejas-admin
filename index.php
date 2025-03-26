@@ -89,6 +89,8 @@
                       <p class="small mb-0">Ainda não tem uma conta? <a href="criar-conta.php">Criar conta </a></p>
                     </div>
 
+                    <a href="../Admin_Omnigrejas/main.php">entrar</a>
+
 
                   </form>
 

@@ -16,6 +16,15 @@ if (isset($pagina)) {
         case 'departamentos':
             $pagina_atual = "departamentos.php"; 
             break;
+        case'institucional':
+            $pagina_atual = "institucional.php"; 
+            break;
+        case 'departamento':
+            $pagina_atual = "departamento.php"; 
+            break;
+        case 'obreiro':
+            $pagina_atual = "obreiro.php"; 
+            break;
           case 'categoria':
             $pagina_atual = "categoria.php"; 
             break;
@@ -52,15 +61,7 @@ if (isset($pagina)) {
 
   <main id="main" class="main">
 
-    <div class="pagetitle">
-        <h1>Dashboard</h1>
-        <nav>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Início</a></li>
-                <li class="breadcrumb-item active">Painel de Controle</li>
-            </ol>
-        </nav>
-    </div><!-- End Page Title -->
+    
 
     <section class="section dashboard">
         <div class="row">

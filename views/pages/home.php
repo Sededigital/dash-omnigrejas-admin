@@ -1,4 +1,16 @@
+<div class="pagetitle">
+        <h1>Dashboard</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                <li class="breadcrumb-item active">Painel de Controle</li>
+            </ol>
+        </nav>
+    </div>
+
+
 <div class="row">
+
                     
                     <!-- Igrejas Card -->
                     <div class="col-xxl-4 col-md-4">

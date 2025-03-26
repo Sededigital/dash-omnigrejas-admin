@@ -29,6 +29,12 @@
 
 <aside id="sidebar" class="sidebar">
     <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+        <a class="nav-link" href="?pagina=home">
+          <i class="bi bi-house"></i><span>Painel de Controle</span>
+        </a>
+      </li>
   
       <!-- Igrejas -->
       <li class="nav-item">
@@ -37,9 +43,9 @@
         </a>
         <ul id="igrejas-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
           <li><a href="?pagina=igrejas"><i class="bi bi-circle"></i><span>Igrejas</span></a></li>
-          <li><a href="planos.html"><i class="bi bi-circle"></i><span>Menu de Preço</span></a></li>
-          <li><a href="departamento.html"><i class="bi bi-circle"></i><span>Departamentos</span></a></li>
-          <li><a href="institucional.html"><i class="bi bi-circle"></i><span>Institucional</span></a></li>
+          <li><a href="?pagina=planos"><i class="bi bi-circle"></i><span>Menu de Preço</span></a></li>
+          <li><a href="?pagina=departamento"><i class="bi bi-circle"></i><span>Departamentos</span></a></li>
+          <li><a href="?pagina=institucional"><i class="bi bi-circle"></i><span>Institucional</span></a></li>
         </ul>
       </li>
   
@@ -88,7 +94,7 @@
   
       <!-- Obreiros -->
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="?pagina=obreiro">
           <i class="bi bi-people-fill"></i><span>Obreiros</span>
         </a>
       </li>
